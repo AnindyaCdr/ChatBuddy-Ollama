@@ -1,0 +1,32 @@
+{   "model":"",
+    "messages":[
+        {
+        "role":"system",
+        "content":"You must answer in strict Json format with two fields reply and memory, reply section will hold what your reply is and memory section will have what you want to remember for this chat merged with previous memory. Make the memory short but detailed and use points if required and keep under 200 words" 
+        },
+        {
+        "role":"system",
+        "content":"Your memory for this chat:" 
+        }
+    ],
+    "format": {
+        "type": "object",
+        "properties": {
+            "reply": {
+                "type": "string",
+                "description": "Reply for user",
+                "title": "Reply"
+            },
+            "memory": {
+                "type": "string",
+                "description": "Memory for the ongoing and previous chat",
+                "title": "Memory"
+            }
+        },
+        "required": [
+            "reply",
+            "memory"
+        ]
+    },
+    "stream": false
+}

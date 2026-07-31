@@ -1,0 +1,12 @@
+{   "user":{
+        "role":"user",
+        "content":""
+    },
+    "chat":{
+        "role":"assistant",
+        "content":{
+            "reply":"",
+            "memory":""
+        }
+    }
+}
